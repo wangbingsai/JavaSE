@@ -1,5 +1,13 @@
 import org.junit.Test;
 
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Random;
+import java.util.TreeSet;
+
 public class Test1 {
     @Test
     public void test() {
@@ -62,13 +70,41 @@ public class Test1 {
     }
 
     @Test
-    public void Te() {
-        Integer integer = new Integer(100);
-//将引用数据类型转换成基本数据类型-->拆箱
-        Integer a1 = 1000;
-        Integer a2 = 1000;
-        System.out.println(a1 == a2);
-    }
+    public void Te() throws ParseException {
 
+    }
+    @Test
+    public void Test003(){
+        TreeSet<String> ts = new TreeSet<>();
+        ts.add("zhangsan");
+        ts.add("lisi");
+        ts.add("wangwu");
+        ts.add("wangliu");
+        for(String str : ts){
+            System.out.println(str);
+        }
+    }
+    @Test
+    public void Test004(){
+        int a = 0;
+        a = ++a + a++;
+        System.out.println(a);
+    }
+    @Test
+    public void Test005() {
+        String str = new String("a");
+        String str2 = new String("a");
+        System.out.println(str == str2);
+        Integer a = 1;
+        Integer b = 1;
+        System.out.println(a==b);
+
+    }
+    @Test
+    public void Test006() {
+
+            System.out.println("HelloWorld.java".substring(4,8));
+
+    }
 }
 

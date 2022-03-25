@@ -1,0 +1,6 @@
+public class Stream{
+     public static void main(String[] args) {
+          System.out.println("Hello World!");
+     }
+}
+你好恶趣味群无多撒大所大所大

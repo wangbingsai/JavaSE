@@ -1,3 +1,5 @@
+import java.awt.*;
+
 /**
  * @Author 空白
  * @Date 2021/8/19 20:57
@@ -18,6 +20,7 @@ public class BubbleSort {
                     int temp = arr[j+1];
                     arr[j+1] = arr[j ];
                     arr[j ] = temp;
+
                 }
             }
         }

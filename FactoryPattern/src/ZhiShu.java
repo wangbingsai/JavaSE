@@ -8,12 +8,13 @@ public class ZhiShu {
         System.out.println("请输入数字");
         int i = scanner.nextInt();
         //调用num方法找出比自身大最小的质数
-        boolean b = isNum(i);
-        if (b){
+       /* boolean b = isNum(i);*/
+       /* if (b){
             System.out.println(i+"-->质数");
         }else {
             System.out.println(i+"-->非质数");
-        }
+        }*/
+        System.out.println(isNum(i) ? "质数" : "非质数");
     }
 
     //判断是否为质数
