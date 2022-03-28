@@ -1,7 +1,10 @@
 package work.yukong;
 
 
+import org.junit.Test;
+
 import java.util.Scanner;
+import java.util.Stack;
 
 /**
  * @Author 空白
@@ -44,5 +47,12 @@ public class Test01 {
         System.out.println("平均数为:"+(sum/ arr.length));
 
 
+    }
+
+    @Test
+
+    public void test01() {
+        Stack<Object> objects = new Stack<>();
+        System.out.println(objects.peek());
     }
 }

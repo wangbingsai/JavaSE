@@ -12,11 +12,11 @@ public class Test001 {
 class A{
     private int a ;
 
-    public void setA(int a) {
+    public int  setA(int a,int b) {
         if (a!=1){
             this.a = a;
         }
-
+    return a;
 
     }
 
@@ -26,7 +26,6 @@ class A{
 
     public static void main(String[] args) {
         A a = new A();
-        a.setA(3);
         System.out.println(a.getA());
     }
 }

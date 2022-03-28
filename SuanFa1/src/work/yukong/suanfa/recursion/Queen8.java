@@ -12,7 +12,6 @@ public class Queen8 {
     public static void main(String[] args) {
         cheek(0);
         System.out.println(count);
-
     }
     //判断是否冲突
     public static boolean conflict(int n){
@@ -35,13 +34,12 @@ public class Queen8 {
         for (int i = 0; i < max; i++) {
             //将第n个皇后摆放在第i个位置
             array[n] = i;
-            //如果n和之前的皇后不冲动则直接递归调用，如果冲突，会跑完剩余的循环进行判断是否冲突，跑完循环还是冲突的话，就会回溯到上一个皇后更改位置，继续摆放
+            //如果n和之前的皇  后不冲动则直接递归调用，如果冲突，会跑完剩余的循环进行判断是否冲突，跑完循环还是冲突的话，就会回溯到上一个皇后更改位置，继续摆放
             //每次完一个棋盘就会向上回溯，不满足条件继续回溯
             if (conflict(n)) {
                 cheek(n+1);
             }
         }
-
     }
     public static void print(){
         count++;
