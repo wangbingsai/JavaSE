@@ -1,5 +1,8 @@
 package work.yukong.suanfa.sort;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Date;
+
 /**
  * @Author 空白
  * @Date 2022/3/28 23:54
@@ -9,6 +12,18 @@ public class InsertSort {
     public static void main(String[] args) {
         int[] arr = {1,3,5,-1,7};
         insertSort(arr);
+        /*int[] arr = new int[80000];
+        for (int i = 0; i < 80000; i++) {
+            arr[i] = (int)(Math.random()*800000);
+        }
+        Date date = new Date();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss SSS");
+        String format = simpleDateFormat.format(date);
+        System.out.println(format);
+        insertSort(arr);
+        Date date1 = new Date();
+        String format1 = simpleDateFormat.format(date1);
+        System.out.println(format1);*/
     }
     public static void insertSort(int[] arr){
         for (int i = 1; i < arr.length; i++) {
